@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hair by Megan Essig - Orlando's premier hair studio offering haircuts, coloring, balayage, Brazilian blowouts, and extensions. Book your appointment today.">
+    <meta name="keywords" content="hair salon Orlando, hair stylist, balayage, Brazilian blowout, hair extensions, haircuts, hair color, Megan Essig">
+    <meta name="author" content="Megan Essig">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hair by Megan Essig - Orlando's Premier Hair Studio">
+    <meta property="og:description" content="Where Beauty Becomes an Experience. Expert haircuts, coloring, balayage, and extensions in Orlando, FL.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="assets/asset 0.jpeg">
+    
+    <title>Hair by Megan Essig - Orlando's Premier Hair Studio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HairSalon",
+        "name": "Hair by Megan Essig",
+        "image": "assets/asset 0.jpeg",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1235 N. Orange Ave. St 201",
+            "addressLocality": "Orlando",
+            "addressRegion": "FL",
+            "postalCode": "32804",
+            "addressCountry": "US"
+        },
+        "telephone": "+1-407-927-1927",
+        "email": "meganessig1@gmail.com",
+        "priceRange": "$$",
+        "openingHours": "By Appointment",
+        "url": "https://hairbymeganessig.com",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "28.5589",
+            "longitude": "-81.3792"
+        },
+        "sameAs": [
+            "https://facebook.com/megmeups"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="#" class="logo">Hair by Megan Essig</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#book">Book Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="overlay" id="overlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#book">Book Now</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="assets/asset 0.jpeg" alt="Hair by Megan Essig">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Where Beauty <span>Becomes</span> an Experience</h1>
+            <p>Orlando's Premier Hair Studio</p>
+            <a href="#book" class="btn">Book Your Appointment</a>
+        </div>
+    </section>
+    
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="assets/asset 1.jpeg" alt="Megan Essig - Hair Stylist">
+                </div>
+                <div class="about-content">
+                    <h2>Meet <span>Megan Essig</span></h2>
+                    <p>In Megan's 16 years of enhancing beauty in others she has had the pleasure of working with various models and actors on set and clients behind the chair in Hollywood, CA, Auckland, New Zealand, Salt Lake City, UT & now Orlando, FL.</p>
+                    <p class="quote">"Beauty is not only seen by the naked eye it is also felt within us, when we feel beautiful we see the world in a different way."</p>
+                    <p>Allow her experience and talent to transform your life. Makeovers, haircuts, hair color, photo shoots or any special event — look no further for your hair needs!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Preview -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Gallery</h2>
+                <div class="accent-line"></div>
+                <p>Explore our portfolio of stunning transformations</p>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items populated by JavaScript -->
+            </div>
+            <div class="gallery-more">
+                <button id="viewMoreGallery" class="btn btn-outline-dark">View More Images</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Inspired CTA -->
+    <section class="inspired-cta">
+        <div class="container">
+            <div class="inspired-content">
+                <span class="inspired-tag">Inspired by These Transformations?</span>
+                <p class="inspired-desc">Each look you see is thoughtfully crafted to enhance natural beauty and reflect personal style. From dimensional blondes to seamless extensions, every detail matters.</p>
+                <p class="inspired-sub">Explore our complete gallery to see more real client results and signature finishes.</p>
+                <a href="#gallery" class="btn btn-outline-light">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Booking -->
+    <section class="booking" id="book">
+        <div class="container">
+            <div class="section-header">
+                <h2>Book Your Appointment</h2>
+                <div class="accent-line"></div>
+                <p>Let's create your perfect look. Fill out the form below to request your appointment.</p>
+            </div>
+            
+            <div class="booking-wrapper">
+                <!-- Booking Form -->
+                <form id="bookingForm" class="booking-form">
+                    <!-- Client Information -->
+                    <div class="form-section">
+                        <h3>Client Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <!-- Appointment Details -->
+                    <div class="form-section">
+                        <h3>Appointment Details</h3>
+                        <div class="form-group">
+                            <label for="service">Select Service *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Choose a service...</option>
+                                <option value="custom-blonde">Custom Blonde</option>
+                                <option value="balayage">Balayage</option>
+                                <option value="full-color">Full Color</option>
+                                <option value="root-touchup">Root Touch-Up</option>
+                                <option value="extensions-consultation">Hair Extensions Consultation</option>
+                                <option value="extension-installation">Extension Installation</option>
+                                <option value="haircut-style">Haircut & Style</option>
+                                <option value="special-event">Special Event Styling</option>
+                                <option value="brazilian-blowout">Brazilian Blowout</option>
+                                <option value="blowout">Blowout</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="preferredDate">Preferred Date *</label>
+                                <input type="date" id="preferredDate" name="preferredDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredTime">Preferred Time *</label>
+                                <select id="preferredTime" name="preferredTime" required>
+                                    <option value="">Select a time...</option>
+                                    <option value="9:00 AM">9:00 AM</option>
+                                    <option value="10:00 AM">10:00 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="1:00 PM">1:00 PM</option>
+                                    <option value="2:00 PM">2:00 PM</option>
+                                    <option value="3:00 PM">3:00 PM</option>
+                                    <option value="4:00 PM">4:00 PM</option>
+                                    <option value="5:00 PM">5:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="radio-label">Is this your first visit?</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="firstVisit" value="yes">
+                                    <span>Yes</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="firstVisit" value="no">
+                                    <span>No</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Hair Details -->
+                    <div class="form-section">
+                        <h3>Tell Us About Your Hair</h3>
+                        <div class="form-group">
+                            <label for="hairHistory">Current Hair Color / History</label>
+                            <textarea id="hairHistory" name="hairHistory" rows="3" placeholder="Describe your current color, when last colored, products used..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="inspiration">Inspiration or Desired Look</label>
+                            <textarea id="inspiration" name="inspiration" rows="3" placeholder="Describe your goal look, reference colors, style preferences..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="inspirationPhotos">Upload Inspiration Photos (Optional)</label>
+                            <input type="file" id="inspirationPhotos" name="inspirationPhotos" accept="image/*" multiple>
+                            <span class="file-hint">Upload up to 3 images (JPG, PNG)</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Policies -->
+                    <div class="form-section">
+                        <h3>Policies & Payment</h3>
+                        <p class="payment-info">A $50 deposit is required to secure your appointment. You will receive a payment link after booking confirmation.</p>
+                        
+                        <div class="form-group">
+                            <label class="radio-label">Preferred Payment Method</label>
+                            <div class="psp-options">
+                                <label class="psp-option">
+                                    <input type="radio" name="paymentMethod" value="venmo" checked>
+                                    <span class="psp-logo">
+                                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5v-2.14c-1.57-.36-3.04-1.16-4.06-2.52-.52.71-.84 1.54-.84 2.43 0 1.08.44 2.07 1.15 2.82.26.27.57.5.89.7-.1.32-.19.65-.19 1.01 0 1.47 1.19 2.67 2.65 2.67.58 0 1.13-.19 1.58-.52.45.3.99.46 1.56.46 1.47 0 2.67-1.2 2.67-2.67 0-.35-.08-.69-.19-1.01.32-.2.63-.43.89-.7.71-.75 1.15-1.74 1.15-2.82 0-.89-.32-1.72-.84-2.43-1.02 1.36-2.49 2.16-4.06 2.52v2.14c-1.47.26-2.65 1.59-2.65 3.15 0 1.04.49 1.97 1.26 2.57-.04.17-.07.35-.07.53 0 1.47 1.19 2.67 2.65 2.67.73 0 1.41-.3 1.91-.79.5.49 1.18.79 1.91.79 1.46 0 2.65-1.2 2.65-2.67 0-.18-.03-.36-.07-.53.77-.6 1.26-1.53 1.26-2.57 0-1.56-1.18-2.89-2.65-3.15z"/></svg>
+                                        Venmo
+                                    </span>
+                                </label>
+                                <label class="psp-option">
+                                    <input type="radio" name="paymentMethod" value="zelle">
+                                    <span class="psp-logo">
+                                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                        Zelle
+                                    </span>
+                                </label>
+                                <label class="psp-option">
+                                    <input type="radio" name="paymentMethod" value="paypal">
+                                    <span class="psp-logo">
+                                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 3.72a.771.771 0 0 1 .76-.654h6.692c2.225 0 3.947.494 5.076 1.472.928.8 1.47 1.89 1.606 3.227.015.146.015.29.015.433-.03.167-.03.334-.03.507 0 .166.015.333.03.493h2.147a.77.77 0 0 0 .76-.654l.928-7.064a.641.641 0 0 0-.633-.74h-3.27a.771.771 0 0 1-.76-.654l-.123-.934a.771.771 0 0 0-.76-.654H6.835a.77.77 0 0 0-.76.654L5.568 18.63a.771.771 0 0 1-.76.654l-1.154.003a.641.641 0 0 1-.633-.74l.03-.18.124-.93.028-.164a.641.641 0 0 1 .633-.64h3.28a.771.771 0 0 1 .76.654l.105.79h-2.46z"/></svg>
+                                        PayPal
+                                    </span>
+                                </label>
+                                <label class="psp-option">
+                                    <input type="radio" name="paymentMethod" value="cashapp">
+                                    <span class="psp-logo">
+                                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+                                        Cash App
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="deposit" required>
+                                <span>I understand that a deposit may be required to secure my appointment.</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="cancellation" required>
+                                <span>I agree to the salon's cancellation policy.</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Submit -->
+                    <button type="submit" class="btn btn-submit">Reserve My Appointment</button>
+                </form>
+                
+                <!-- Success Message -->
+                <div id="bookingSuccess" class="booking-success" style="display: none;">
+                    <div class="success-icon">&#10003;</div>
+                    <h3>Thank you for your request!</h3>
+                    <p>We'll review your appointment details and send a confirmation shortly.</p>
+                    <p class="success-note">If you have any urgent questions, feel free to contact us directly.</p>
+                    <a href="#contact" class="btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Love What You See CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <span class="cta-tag">Love what you see?</span>
+                <h2>Discover more transformations<br>and signature looks in our full gallery.</h2>
+                <a href="#gallery" class="btn btn-outline-light">View More</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <span>1235 N. Orange Ave. St 201<br>Orlando, FL 32804</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        <span><a href="tel:+14079271927">407-927-1927</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <span><a href="mailto:meganessig1@gmail.com">meganessig1@gmail.com</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        <span>By Appointment</span>
+                    </div>
+                </div>
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0123456789!2d-81.3792!3d28.5589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDMnJzUuNi4xIk4wgNzDCsDIyJzA4LjAiVw!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="http://facebook.com/megmeups" aria-label="Facebook" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 Hair by Megan Essig. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
